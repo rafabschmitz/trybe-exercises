@@ -1,12 +1,26 @@
-.imgStyle{
-    width: 300px;
-}
-.cavaloStyle{
-    color:blue
-}
-.paragrafo {
-    background-color: rgb(240, 240, 240);
-    width: 80%;
-    height: 300px;
-    overflow: auto;
-}
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .width-and-height {
+    height: 50px;
+    width: 50px;
+  }
+
+  .padding {
+    padding: 20px;
+  }
+
+  .margin {
+    margin:30px;
+  }
+
+  .border {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+  }
