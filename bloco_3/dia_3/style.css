@@ -1,0 +1,12 @@
+.imgStyle{
+    width: 300px;
+}
+.cavaloStyle{
+    color:blue
+}
+.paragrafo {
+    background-color: rgb(240, 240, 240);
+    width: 80%;
+    height: 300px;
+    overflow: auto;
+}
