@@ -3,21 +3,39 @@
     color: white;
 }
 
-nav ul li{
+header{
+    background-color: rgb(31, 104, 31);
+}
+
+header nav ul li{
     display: inline-block;
     margin-inline: 15px;
 }
 
-nav {
+header nav {
     text-align: center;
 }
 
+aside{
+    float: right;
+    width:300px;
+    background-color: rgb(31, 104, 31);
+}
+
 .navButtons{
+    background-color: rgb(31, 104, 31);
     text-decoration: none;
     font-size: 1.5em;
     color: white;
 }
 
-header{
-    background-color: rgb(31, 104, 31);
+aside nav ul li{
+    list-style: none;
 }
+
+.MenuButtons{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+
