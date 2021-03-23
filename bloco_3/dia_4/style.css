@@ -18,10 +18,14 @@ header nav {
 
 aside{
     float: right;
-    width:300px;
+    width:20%;
     background-color: rgb(31, 104, 31);
 }
 
+main{
+    width:75%;
+    background-color: greenyellow;
+}
 .navButtons{
     background-color: rgb(31, 104, 31);
     text-decoration: none;
@@ -37,5 +41,9 @@ aside nav ul li{
     text-decoration: none;
     font-size: 1.5em;
     color: white;
+}
+
+.facts{
+    margin-left: 20px;
 }
 
