@@ -7,6 +7,11 @@ header{
     background-color: rgb(31, 104, 31);
 }
 
+footer{
+    background-color:grey;
+    font-weight: bolder;
+}
+
 header nav ul li{
     display: inline-block;
     margin-inline: 15px;
@@ -47,3 +52,10 @@ aside nav ul li{
     margin-left: 20px;
 }
 
+iframe{
+    width: 90%;
+    height: 600px;
+}
+.video-container{
+    text-align: center;
+}
