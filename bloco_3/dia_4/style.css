@@ -1,39 +1,61 @@
-      h1 {
-        text-align: center;
-      }
+.hero-title{
+    text-align: center;
+    color: white;
+}
 
-      .first {
-        background-color: rgb(235, 200, 84);
-        font-size: 20px;
-        height: 50px;
-        text-align: center;
-        width: 200px;
-        display: block;
-        margin: auto;
-      }
+header{
+    background-color: rgb(31, 104, 31);
+}
 
-      .second {
-        background-color: rgb(219, 219, 219);
-        font-size: 20px;
-        height: 50px;
-        text-align: center;
-        width: 300px;
-        display: inline-block;
-      }
+footer{
+    background-color:grey;
+    font-weight: bolder;
+}
 
-      .third {
-        background-color: rgb(170, 142, 106);
-        font-size: 20px;
-        height: 50px;
-        text-align: center;
-        width: 300px;
-        display: inline-block;
-      }
+header nav ul li{
+    display: inline-block;
+    margin-inline: 15px;
+}
 
-      #image-container, #text-container{
-          text-align: center;
-      }
+header nav {
+    text-align: center;
+}
 
-    .text{
-        display: inline;
-    }
+aside{
+    float: right;
+    width:20%;
+    background-color: rgb(31, 104, 31);
+}
+
+main{
+    width:75%;
+    background-color: greenyellow;
+}
+.navButtons{
+    background-color: rgb(31, 104, 31);
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+aside nav ul li{
+    list-style: none;
+}
+
+.MenuButtons{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+.facts{
+    margin-left: 20px;
+}
+
+iframe{
+    width: 90%;
+    height: 600px;
+}
+.video-container{
+    text-align: center;
+}
