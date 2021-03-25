@@ -5,7 +5,7 @@ let triangulo;
 
 if (ang1<0 || ang2<0 || ang3<0){
     console.log("um dos angulos é negativo");
-} else if (ang1 + ang2 + ang3 == 180){
+} else if (ang1 + ang2 + ang3 === 180){
     triangulo = true;
     console.log(triangulo);
 } else{
