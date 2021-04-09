@@ -1,36 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Administrador do Tempo</title>
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
   </head>
-  <body id="container">
-    <header id="header-container">
-      <h1>Administrador do Tempo da Trybe</h1>
-    </header>
-
-    <section class="emergency-tasks">
-      <div>
-        <h3>Urgente e Importante</h3>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
       </div>
-      <div>
-        <h3>Urgente e Não-Importante</h3>
-      </div>
-    </section>
-
-    <section class="no-emergency-tasks">
-      <div>
-        <h3>Não-Urgente e Importante</h3>
-      </div>
-      <div>
-        <h3>Não-Urgente e Não-Importante</h3>
-      </div>
-    </section>
-
-    <footer id="footer-container">
-      <div>&copy; Trybe</div>
-    </footer>
-    <script src="script.js"></script>
+    </div>
+    <script>
+        function changeText (nomeTag,text){
+            let paragraph = document.getElementsByTagName(nomeTag);
+            paragraph[0].innerText = text;
+        }
+        function changeColor (nomeClasse,color){
+            let container = document.getElementsByClassName(nomeClasse);
+            container[0].style.backgroundColor = color;
+        }
+        function exibeObjeto (nomeTag){
+            let object = document.getElementsByTagName(nomeTag);
+            for(i = 0; i < object.length; i += 1) {
+                console.log(object[i].innerText);
+            }
+        }
+        let text = "Daqui a 2 anos espero estar consolidado na carreira de desenvolvedor, recebendo um bom salário, trabalhando em uma boa empresa e residindo em Florianópolis.";
+        changeColor ("main-content","rgb(76,164,109");
+        changeColor ("center-content","white");
+        changeText ("h1","Exercício 5.1 - JavaScript");
+        changeText ("p",text.toUpperCase());
+        exibeObjeto ("p");    
+    </script>
   </body>
 </html>
