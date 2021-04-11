@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="paiDoPai">
+        <div id="pai">
+          <div id="primeiroFilho"></div>
+          <div id="elementoOndeVoceEsta">
+            <div id="primeiroFilhoDoFilho"></div>
+            <div id="segundoEUltimoFilhoDoFilho"></div>
+          </div>
+          Atenção!
+          <div id="terceiroFilho"></div>
+          <div id="quartoEUltimoFilho"></div>
+        </div>
+      </div>
+      <script>
+        //Acesse o elemento elementoOndeVoceEsta          
+        let element = document.getElementById("elementoOndeVoceEsta");
+        //Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele
+        element.parentNode.style.backgroundColor = "red";
+        //Acesse o primeiroFilhoDoFilho e adicione um texto a ele.
+        element.firstElementChild.innerHTML = "<spam>Pega essa div</spam>";
+        //Acesse o primeiroFilho a partir de pai 
+        let father = document.getElementById("pai");
+        console.log(father.firstElementChild);
+        //Acesse o primeiroFilho a partir de elementoOndeVoceEsta
+        console.log(element.parentNode.firstElementChild);
+        //Acesse o texto Atenção! a partir de elementoOndeVoceEsta 
+        console.log(element.nextSibling);
+        //Acesse o terceiroFilho a partir de elementoOndeVoceEsta 
+        console.log(element.nextElementSibling);
+        //Acesse o terceiroFilho a partir de pai 
+        console.log(father.children[2]);
+        //Crie um irmão para elementoOndeVoceEsta .
+        let brother = document.createElement('div');
+        brother.innerHTML= "<spam>olha a minha div</spam>";
+        father.appendChild(brother);
+        //Crie um filho para elementoOndeVoceEsta 
+        let newChild = document.createElement('div');
+        newChild.innerHTML= "<spam>div filha</spam>";
+        element.appendChild(newChild);
+        //Crie um filho para primeiroFilhoDoFilho 
+        let newChild2 = document.createElement('div');
+        newChild2.innerHTML= "<spam>div filha da first </spam>";
+        father.firstElementChild.appendChild(newChild2);
+        //A partir desse filho criado, acesse terceiroFilho
+        let baby = father.firstElementChild.firstElementChild;
+        console.log(baby.parentNode.nextElementSibling.nextElementSibling);
+        //Remova todos os elementos da página, exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho
+        document.body.appendChild(father);
+        document.body.removeChild(document.getElementById("paiDoPai"));
+        father.removeChild(document.getElementById("primeiroFilho"));
+        father.removeChild(document.getElementById("terceiroFilho"));
+        father.removeChild(document.getElementById("quartoEUltimoFilho"));
+        father.removeChild(element.nextSibling);
+        father.removeChild(element.nextElementSibling);
+        element.removeChild(document.getElementById("segundoEUltimoFilhoDoFilho").nextElementSibling);
+        element.removeChild(document.getElementById("segundoEUltimoFilhoDoFilho"));
+      </script>
+</body>
+</html>
