@@ -1,29 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+//import ReactClass from './component.js';
+
+const Task = (value) => {
+  return (
+    <li>{value}</li>
+  );
+}
+
+const array = ['tomar banho', 'almoçar', 'jantar', 'estudar'];
+const lista = array.map((compromisso) => Task(compromisso));
 
 function App() {
-  const element = <h1>Hello, world!</h1>;
-   
-
-  return (
-    <div className="App">
-      <div>{element}</div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (lista);
 }
 
 export default App;
