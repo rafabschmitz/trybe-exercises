@@ -1,0 +1,30 @@
+.Item {
+  border-radius: 5%;
+  border-style: groove;
+  display: flex;
+  flex: auto;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 300px;
+  
+}
+
+.Container {
+  align-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  justify-content: space-evenly;
+}
+
+.PokeName {
+  font-weight: 700;
+}
+
+.PokeType {
+  font-style: italic;
+}
+
+.title{
+  text-align: center;
+}
